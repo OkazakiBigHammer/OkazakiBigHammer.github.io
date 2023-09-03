@@ -2,46 +2,228 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minimalistic Website</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Chrome, Firefox OS and Opera Status Bar Color -->
+    <meta name="theme-color" content="#FFFFFF">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.19.0/themes/prism.min.css">
+    <link rel="stylesheet" type="text/css" href="css/SourceSansPro.css">
+    <link rel="stylesheet" type="text/css" href="css/theme.css">
+    <link rel="stylesheet" type="text/css" href="css/notablog.css">
+    <!-- Favicon -->
+
+    <link rel="shortcut icon"
+        href="">
+
+    <style>
+        :root {
+            font-size: 20px;
+        }
+    </style>
+    <title>Brandon Pai(CK)</title>
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="Brandon Pai(CK)">
+
+    <meta name="description"
+        content="Serendipity.&#39;">
+    <meta property="og:description"
+        content="Serendipity.&#39;">
+    <meta property="og:image"
+        content="">
 </head>
 
 <body>
-    <header>
-        <h1>Brandon Pai</h1>
-    </header>
+    <nav class="Navbar">
+        <a href='/'>
+            <div class="Navbar__Btn">
+                <span>Home</span>
+            </div>
+        </a>
+        <span class="Navbar__Delim">&centerdot;</span>
+        <a href='/About'>
+            <div class="Navbar__Btn">
 
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-        </ul>
+                <span><img class="inline-img-icon"
+                        src="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text text-anchor=%22middle%22 dominant-baseline=%22middle%22 x=%2250%22 y=%2255%22 font-size=%2280%22&gt;🚀&lt;/text&gt;&lt;/svg&gt;"></span>&nbsp;
+
+                <span>About</span>
+            </div>
+        </a>
+        <span class="Navbar__Delim">&centerdot;</span>
+        <a href='/Projects'>
+            <div class="Navbar__Btn">
+
+                <span><img class="inline-img-icon"
+                        src="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text text-anchor=%22middle%22 dominant-baseline=%22middle%22 x=%2250%22 y=%2255%22 font-size=%2280%22&gt;🔨&lt;/text&gt;&lt;/svg&gt;"></span>&nbsp;
+
+                <span>Projects</span>
+            </div>
+        </a>
+        <span class="Navbar__Delim">&centerdot;</span>
+        <a href='/Articles'>
+            <div class="Navbar__Btn">
+
+                <span><img class="inline-img-icon"
+                        src="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text text-anchor=%22middle%22 dominant-baseline=%22middle%22 x=%2250%22 y=%2255%22 font-size=%2280%22&gt;💫&lt;/text&gt;&lt;/svg&gt;"></span>&nbsp;
+
+                <span>Articles</span>
+            </div>
+        </a>
+        <span class="Navbar__Delim">&centerdot;</span>
+        <a href='/Selected Readings'>
+            <div class="Navbar__Btn">
+
+                <span><img class="inline-img-icon"
+                        src="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text text-anchor=%22middle%22 dominant-baseline=%22middle%22 x=%2250%22 y=%2255%22 font-size=%2280%22&gt;📚&lt;/text&gt;&lt;/svg&gt;"></span>&nbsp;
+
+                <span>Selected Readings</span>
+            </div>
+        </a>
+
+        <span class="Navbar__Delim">&centerdot;</span>
+        <a href='/My Life'>
+            <div class="Navbar__Btn">
+
+                <span><img class="inline-img-icon"
+                        src="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text text-anchor=%22middle%22 dominant-baseline=%22middle%22 x=%2250%22 y=%2255%22 font-size=%2280%22&gt;🥊&lt;/text&gt;&lt;/svg&gt;"></span>&nbsp;
+
+                <span>My Life</span>
+            </div>
+        </a>
+
+
     </nav>
+    <header class="Header">
 
-    <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>This is the home section of your website.</p>
-        </section>
+        <div class="Header__Cover">
+        </div>
 
-        <section id="about">
-            <h2>About</h2>
-            <p>This is the about section of your website.</p>
-        </section>
+        <div class="Header__Spacer ">
+        </div>
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <p>This is the projects section of your website.</p>
-        </section>
-    </main>
+        <div class="Header__Icon">
+            <span><img class="inline-img-icon"
+                    src="instagram photo"></span>
+        </div>
 
-    <footer>
-        <p>&copy; 2023 Your Name. All rights reserved.</p>
-    </footer>
+        <h1 class="Header__Title">Brandon Pai</h1>
+
+    </header>
+    <article class="ArticleList">
+
+        <article class="Article">
+            <h3 class="Article__Title">
+
+                <span><img class="inline-img-icon"
+                        src="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text text-anchor=%22middle%22 dominant-baseline=%22middle%22 x=%2250%22 y=%2255%22 font-size=%2280%22&gt;🚀&lt;/text&gt;&lt;/svg&gt;"></span>
+
+                <a href='/About'>
+                    About me.
+                </a>
+            </h3>
+
+            <p class="Article__Desc">
+                <span class="SemanticStringArray"><span class="SemanticString">Who I am.</span></span>
+            </p>
+
+            <div class="DateTagBar">
+
+
+            </div>
+        </article>
+
+        <article class="Article">
+            <h3 class="Article__Title">
+
+                <span><img class="inline-img-icon"
+                        src="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text text-anchor=%22middle%22 dominant-baseline=%22middle%22 x=%2250%22 y=%2255%22 font-size=%2280%22&gt;⏳&lt;/text&gt;&lt;/svg&gt;"></span>
+
+                <a href='/Projects'>
+                    Projects
+                </a>
+            </h3>
+
+            <p class="Article__Desc">
+                <span class="SemanticStringArray"><span class="SemanticString">My Projects. School work or side projects.</span></span>
+            </p>
+
+            <div class="DateTagBar">
+
+
+            </div>
+        </article>
+
+        <article class="Article">
+            <h3 class="Article__Title">
+
+                <span><img class="inline-img-icon"
+                        src="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text text-anchor=%22middle%22 dominant-baseline=%22middle%22 x=%2250%22 y=%2255%22 font-size=%2280%22&gt;📝&lt;/text&gt;&lt;/svg&gt;"></span>
+
+                <a href='/Articles'>
+                    Articles
+                </a>
+            </h3>
+
+            <p class="Article__Desc">
+                <span class="SemanticStringArray"><span class="SemanticString">The stuffs I write.</span></span>
+            </p>
+
+            <div class="DateTagBar">
+
+
+            </div>
+        </article>
+
+
+        <article class="Article">
+            <h3 class="Article__Title">
+
+                <span><img class="inline-img-icon"
+                        src="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text text-anchor=%22middle%22 dominant-baseline=%22middle%22 x=%2250%22 y=%2255%22 font-size=%2280%22&gt;📚&lt;/text&gt;&lt;/svg&gt;"></span>
+
+                <a href='/read'>
+                    Selected Readings
+                </a>
+            </h3>
+
+            <p class="Article__Desc">
+                <span class="SemanticStringArray"><span class="SemanticString">Books and essays that I want to share with U.</span></span>
+            </p>
+
+            <div class="DateTagBar">
+
+
+            </div>
+        </article>
+
+        <article class="Article">
+            <h3 class="Article__Title">
+        
+                <span><img class="inline-img-icon"
+                        src="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text text-anchor=%22middle%22 dominant-baseline=%22middle%22 x=%2250%22 y=%2255%22 font-size=%2280%22&gt;📚&lt;/text&gt;&lt;/svg&gt;"></span>
+        
+                <a href='/read'>
+                    My Life
+                </a>
+            </h3>
+        
+            <p class="Article__Desc">
+                <span class="SemanticStringArray"><span class="SemanticString">Other aspects of my life.</span></span>
+            </p>
+        
+            <div class="DateTagBar">
+        
+        
+            </div>
+        </article>
+
+    </article>
+    <script src="script.js"></script>
 </body>
 
 </html>
